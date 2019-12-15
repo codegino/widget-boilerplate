@@ -9,9 +9,13 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { HmrModule } from '../hmr.module';
+import { WidgetToolbarComponent } from './widget-toolbar/widget-toolbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { WidgetSpaceComponent } from './widget-space/widget-space.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WidgetToolbarComponent, WidgetSpaceComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,7 +27,9 @@ import { HmrModule } from '../hmr.module';
         strictActionImmutability: true
       }
     }),
-    !environment.production ? StoreDevtoolsModule.instrument() : []
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

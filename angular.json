@@ -15,7 +15,7 @@
       },
       "root": "projects/widget",
       "sourceRoot": "projects/widget/src",
-      "prefix": "dsgnr",
+      "prefix": "wdgt",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -27,7 +27,10 @@
             "tsConfig": "projects/widget/tsconfig.app.json",
             "aot": false,
             "assets": ["projects/widget/src/favicon.ico", "projects/widget/src/assets"],
-            "styles": ["projects/widget/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/widget/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -99,7 +102,10 @@
             "tsConfig": "projects/widget/tsconfig.spec.json",
             "karmaConfig": "projects/widget/karma.conf.js",
             "assets": ["projects/widget/src/favicon.ico", "projects/widget/src/assets"],
-            "styles": ["projects/widget/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/widget/src/styles.scss"
+            ],
             "scripts": []
           }
         },

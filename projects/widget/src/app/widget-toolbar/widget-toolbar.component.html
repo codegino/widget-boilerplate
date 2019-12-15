@@ -1,0 +1,12 @@
+<div class="example-container">
+  <h2>To do</h2>
+
+  <div
+    cdkDropList
+    [cdkDropListData]="todo"
+    [cdkDropListConnectedTo]="['widget-space']"
+    class="example-list"
+  >
+    <div class="example-box" *ngFor="let item of todo" cdkDrag>{{ item }}</div>
+  </div>
+</div>
