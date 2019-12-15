@@ -10,5 +10,5 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WidgetToolbarComponent {
-  todo = ['widget1', 'widget2', 'widget3', 'widget4', 'widget5'];
+  availableWidgets = ['widget1', 'widget2', 'widget3', 'widget4', 'widget5'];
 }

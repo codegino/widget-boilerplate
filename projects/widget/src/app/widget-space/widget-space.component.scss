@@ -1,16 +1,10 @@
-.example-container {
-  width: 400px;
-}
-
-.example-list {
+.widgets {
   min-height: 60px;
   background: white;
-  border-radius: 4px;
-  overflow: hidden;
   display: block;
 }
 
-.example-box {
+.widget {
   position: relative;
   background-color: #fd4140;
   border: solid 1px #121621;

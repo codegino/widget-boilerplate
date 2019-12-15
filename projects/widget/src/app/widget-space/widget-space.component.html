@@ -1,16 +1,16 @@
-<div class="example-container">
-  <h2>Done</h2>
+<div>
+  <h2>Active Widgets</h2>
 
   <div
     cdkDropList
     [cdkDropListData]="widgets"
     id="widget-space"
-    class="example-list"
+    class="widgets"
     (cdkDropListDropped)="drop($event)"
   >
     <ng-container *ngFor="let widget of widgets; trackBy: trackByFunction">
       <div
-        class="example-box"
+        class="widget"
         mwlResizable
         [enableGhostResize]="true"
         [resizeCursorPrecision]="10"
