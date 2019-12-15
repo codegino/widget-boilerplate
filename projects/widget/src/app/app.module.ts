@@ -13,6 +13,7 @@ import { WidgetToolbarComponent } from './widget-toolbar/widget-toolbar.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { WidgetSpaceComponent } from './widget-space/widget-space.component';
+import { ResizableModule } from 'angular-resizable-element';
 
 @NgModule({
   declarations: [AppComponent, WidgetToolbarComponent, WidgetSpaceComponent],
@@ -29,7 +30,8 @@ import { WidgetSpaceComponent } from './widget-space/widget-space.component';
     }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    ResizableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
